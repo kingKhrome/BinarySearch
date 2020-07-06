@@ -7,39 +7,35 @@
 
 function setup() {
   createCanvas(400, 400);
-  background(255)
-  noFill()
-  strokeWeight(5)
+  background(255);
+  noFill();
+  strokeWeight(5);
   
-  
-  stroke('blue')
-  arc(50, 150, 50, 50,0, PI); //bott
-  
- 
   stroke('black')
-  arc(110, 150, 50, 50,PI, 0); //top
-  arc(110, 150, 50, 50,0, PI); //bott
-  
+  ellipse(110,150,50);
   
   stroke('green')
-  arc(140, 175, 50, 50,PI, 0); //top
-  arc(140, 175, 50, 50,0, PI); //bott
-  
-  stroke('red')
-  arc(170, 150, 50, 50,PI, 0); //top
-  arc(170, 150, 50, 50,0, PI); //bott
+  ellipse(140,175,50);
   
   stroke('yellow')
-
-  arc(80, 175, 50, 50,PI, 0); //top
-  arc(80, 175, 50, 50,0, PI); //bott
+  ellipse(80,175,50);
+ 
+  stroke('blue')
+  ellipse(50,150,50);
+  
+  stroke('yellow')
+  arc(80, 175, 50, 50,PI-.3, PI+.3); 
   
   stroke('black')
-  arc(110, 150, 50, 50,0, PI); //bott
+  arc(110, 150, 50, 50,-PI/2, -PI/2 -.3); 
   
-  stroke('blue')
-  arc(50, 150, 50, 50,PI, 0); //top
-  
-  
-}
+  stroke('green')
+  arc(140, 175, 50, 50,PI-.3, PI+.3); 
 
+  stroke('red')
+  ellipse(170,150,50);
+  
+  stroke('green')
+  arc(140, 175, 50, 50,0, -PI/2); 
+
+}

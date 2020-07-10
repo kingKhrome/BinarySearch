@@ -100,5 +100,5 @@ function draw() {
   background(255);
   show()
   binarySearch()
-  wait(1000)
+  //wait(1000)
 }
